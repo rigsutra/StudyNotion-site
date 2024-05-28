@@ -13,8 +13,11 @@ const App = () => {
       <Navbar isLoggedin={isLoggedin} setIsLoggedin={setIsLoggedin} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="Login" element={<Login />} />
-        <Route path="Signup" element={<Signup />} />
+        <Route path="Login" element={<Login setIsLoggedin={setIsLoggedin} />} />
+        <Route
+          path="Signup"
+          element={<Signup setIsLoggedin={setIsLoggedin} />}
+        />
         <Route path="Dashboard" element={<Dashboard />} />
       </Routes>
     </div>

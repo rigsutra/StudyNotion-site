@@ -1,5 +1,9 @@
 const Home = () => {
-  return <div className="flex justify-center text-center">Home</div>;
+  return (
+    <div className="flex flex-1 justify-center items-center text-white text-3xl">
+      Home
+    </div>
+  );
 };
 
 export default Home;
